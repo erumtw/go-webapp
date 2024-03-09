@@ -1,0 +1,14 @@
+services:
+    godb:
+      image: postgres:16
+      environment:
+        POSTGRES_DB: godb
+        POSTGRES_USER: admin
+        POSTGRES_PASSWORD: password
+      ports:
+        - 5432:5432
+      volumes: 
+       - godb_data:/var/lib/postgresql/data
+
+volumes:
+    godb_data:

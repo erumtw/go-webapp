@@ -1,28 +1,27 @@
 ## go-webapp
-## crash course 42Bangkok
+## crash course 42Bangkok, Go, Postgres, Docker, and Nginx
 #basic command
-build
+- build
 ```bash
 go build main.go
 ```
 
-execute
+- execute
 ```bash
 ./main.go
 ```
 
-build and execute
+- build and execute
 ```bash
 go run main.go -> build and execute
 ```
 
 
-install library
+- install library
 ```bash
 go mod init github/xx/xx
 
 ```
-
 
 # Tasks 1
 1. Create new handler

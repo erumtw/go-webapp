@@ -1,19 +1,19 @@
 package main // this is how go divides
 
 import (
-	"fmt"
-	"github.com/gorilla/mux"
-	"github.com/erumtw/go-webapp/handlers"
+	// "fmt"
 	"net/http"
+
+	"github.com/erumtw/go-webapp/handlers"
+	"github.com/gorilla/mux"
 )
 
 // compile languages , golang here
 // interpret langauages
 
 // web app is a set of pages(urls)
-// url 
+// url
 // / -> root
-
 
 // every url is connected to a function(handler)
 func main() {
@@ -22,10 +22,10 @@ func main() {
 	r := mux.NewRouter()
 
 	// connect the url to the handler
-	r.HandlerFunc("/", handlers.IndexPage)
+	r.HandleFunc("/", handlers.IndexPage)
+	r.HandleFunc("/about", handlers.AboutPage)
 
-	// start ther server 
+	// start ther server
 	http.ListenAndServe(":3000", r)
-
 }
 

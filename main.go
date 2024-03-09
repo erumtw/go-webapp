@@ -23,9 +23,8 @@ func main() {
 
 	// connect the url to the handler
 	r.HandleFunc("/", handlers.IndexPage)
-	r.HandleFunc("/about", handlers.AboutPage)
+	r.HandleFunc("/user/{username}", handlers.UserPage)
 
 	// start ther server
 	http.ListenAndServe(":3000", r)
 }
-

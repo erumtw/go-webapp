@@ -24,11 +24,15 @@ go mod init github/xx/xx
 ```
 
 
-# Tasks
+# Tasks 1
 1. Create new handler
 2. Make this handler return text:
     "Hellooo from <your nickname>!"
 3. Connect this handler to url/about
+
+# Tasks 2
+1. Change the IserPage handler
+2. It should find user in users map and show page with that user
 
 
 # Status Code

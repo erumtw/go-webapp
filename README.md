@@ -1,5 +1,5 @@
 ## go-webapp
-## crash course 42Bangkok, Go, Postgres, Docker, and Nginx
+## crash course 42Bangkok -- Go, Postgres, Docker, and Nginx
 #basic command
 - build
 ```bash
@@ -13,7 +13,7 @@ go build main.go
 
 - build and execute
 ```bash
-go run main.go -> build and execute
+go run main.go 
 ```
 
 
